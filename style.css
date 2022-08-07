@@ -1,0 +1,387 @@
+:root {
+    --primary: #1976D2;
+    --secondary: #9F1AE2;
+    --light: #fcfcfc;
+    --dark: #353839;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--dark);
+}
+
+p,
+span,
+div {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+    font-size: 16px;
+}
+.container {
+    max-width: 1200px !important;
+}
+.navbar {
+    padding-top: 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 25px;
+    color: var(--light) !important;
+    outline: none;
+    transition: .5s;
+}
+.navbar-light .navbar-brand img {
+    max-height: 60px;
+}
+.navbar-light {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: 0px;
+    left: 50%;
+    background: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+    width: 100%;
+    left: 0;
+}
+
+.hero-section {
+    background: linear-gradient(45deg, var(--primary), var(--secondary)) !important;
+}
+.services-section {
+    background-color: var(--primary);
+}
+.font-14px{
+    font-size:14px!important; 
+}
+.card-help {
+    max-width: 650px;
+}
+
+.card-help>article {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.card-help>article i {
+    font-size: 48px;
+    line-height: 70px;
+    height: 80px;
+    width: 80px;
+    border: 6px solid white;
+    border-radius: 50%;
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    margin-top: -36px;
+}
+
+.card-help .text {
+    padding: 16px 20px 30px;
+}
+
+.card-help .btn {
+    margin-top: 10px;
+}
+
+.title-services {
+    color: var(--primary);
+    font-size: 20px;
+}
+.link-none {
+    color: #191919 !important;
+    text-decoration: none !important;
+
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+
+.button-hero {
+    max-width: 250px;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button-outline-blue {
+    max-width: 250px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary);
+    border-color: var(--primary) !important;
+    background-color: #ffffff;
+}
+
+.button-outline-blue:hover {
+    color: #ffffff;
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.button-help {
+    max-width: 175px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-blue {
+    min-width: 175px !important;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #ffffff;
+}
+
+.button-blue:hover {
+    background-color: #ffffff !important;
+    border-color: var(--primary) !important;
+    color: var(--primary);
+}
+
+.button-hero:hover {
+    background-color: #ffffff;
+    color: #191919 !important;
+}
+
+.hero-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.help-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 56px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.contact-section .contact-container {
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .contact-item {
+    width: 100%;
+    background-color: var(--light);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contact-section .contact-item i {
+    font-size: 20px;
+    color:#1976D2;
+    float: left;
+    padding-left:10px;
+    padding-right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.contact-section .contact-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+.contact-section .form {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-section .form input,
+.contact-section .form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.link-formatted {
+    color: var(--dark);
+}
+
+.link-formatted:hover {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 576px) {
+    .button-hero {
+        max-width: 150px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .hero-section {
+        padding-top: 140px;
+        padding-bottom: 105px;
+    }
+
+    .about-section {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .services-section {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .contact-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .navbar {
+        padding-top: 10px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .help-title {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .card-help>article {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 577px) {
+    .hero-section {
+        padding-top: 175px;
+        padding-bottom: 140px;
+    }
+
+    .about-section {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .services-section {
+        padding-top: 100px;
+        padding-bottom: 125px;
+    }
+
+    .contact-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .help-title {
+        font-size: 22px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        padding-top: 220px;
+        padding-bottom: 200px;
+    }
+
+    .about-section {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .services-section {
+        padding-top: 100px;
+        padding-bottom: 125px;
+    }
+
+    .contact-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .help-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 84px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+}
+.footer {
+    color: var(--dark);
+    background-size: contain;
+    padding: 15px 0;
+    font-size:14px!important;
+}
+
+.footer .copyright a {
+    color: var(--dark);
+}
